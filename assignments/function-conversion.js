@@ -5,20 +5,32 @@
 // };
 // myFunction();
 
+let myFunction = e => console.log("function was invoked!");
+myFunction();
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
+
+let anotherFunction = param => param;
+console.log(anotherFunction("Example"));
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
 
+let add = (p1, p2) => p1 + p2;
+console.log(add(1, 2));
+
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
+
+let subtract = (p1, p2) => p1 - p2;
+
 
 
 // Stretch
@@ -28,3 +40,10 @@
 //   return num * 3;
 // });
 // console.log(triple);
+
+let exampleArray = [1, 2, 3, 4];
+let mul3 = num => num * 3;
+
+const triple = arr => arr.map(tr = num => num * 3);
+
+console.log(triple(exampleArray));
